@@ -8,6 +8,7 @@ var index = require('./routes/index');
 var catRouter = require('./routes/cat-router');
 
 var app = express();
+var favicon = require('serve-favicon');
 
 // Template engine.
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
@@ -24,6 +25,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routing.
