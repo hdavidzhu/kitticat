@@ -9,9 +9,7 @@
     "express": "^4.10.6",
     "express-handlebars": "^1.1.0",
     "mongoose": "^3.8.22",
-    "morgan": "^1.5.1"
-  },
-  "devDependencies": {
+    "morgan": "^1.5.1",
     "Faker": "^0.7.2"
   },
   "scripts": {
