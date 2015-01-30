@@ -1,0 +1,13 @@
+<div class="cat-color-buttons">
+	<div class="cat-color-button shadow" style="background-color: gray">
+		<a class="divLink" href="/cats"></a>
+		All
+	</div>
+
+	{{#each colors}}
+		<div class="cat-color-button shadow">
+			<a class="divLink" href="/cats/bycolor/{{this}}"></a>
+			{{this}}
+		</div>
+	{{/each}}
+</div>
