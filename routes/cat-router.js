@@ -1,4 +1,4 @@
-var faker = require('faker');
+var faker = require('Faker');
 var colors = ['violet', 'coral', 'cerise', 'wheat', 'red', 'blue', 'green'];
 
 function shuffle(array) {
